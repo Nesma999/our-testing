@@ -21,3 +21,7 @@ li a {
   text-decoration: none;
 }
 
+li a:hover {
+  background-color: rgb(255, 255, 255);
+  color: #0000ff;
+}
