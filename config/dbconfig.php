@@ -17,6 +17,12 @@
                 die(" Connect Failed ");
             }
         }
+      public function check($a)
+        {
+            $return = mysqli_real_escape_string($this->connection,$a);
+            return $return;
+        }
+
   }
 
 ?>
