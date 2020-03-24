@@ -9,6 +9,14 @@
         {
             $this->db_connect();
         }
-
+        public function db_connect()
+        {
+            $this->connection = mysqli_connect('localhost','root','','egypt-visa');
+            if(mysqli_connect_error())
+            {
+                die(" Connect Failed ");
+            }
+        }
+  }
 
 ?>
