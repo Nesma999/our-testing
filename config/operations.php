@@ -7,7 +7,7 @@
 
     class operations extends dbconfig
     {
-        // Insert Record in the Database
+              // Insert Record in the Database
         public function Store_Record()
         {
             global $db;
@@ -30,7 +30,7 @@
             }
         }
 
-         // Insert Record in the Database Using Query    
+               // Insert Record in the Database Using Query    
         function insert_record($name,$email,$phone,$password)
         {
             global $db;
@@ -47,6 +47,14 @@
                 return false;
             }
         }
+                // Function for signin admin
+       public function signin($name,$pasword)
+         {
+        global $db;
+            $query = "select id,name from users where name='$name' and Password='$pasword' and group_id=1";
+            $result = mysqli_query($db->connection,$query);
+              return $result;
+          }
 
         
     } 
