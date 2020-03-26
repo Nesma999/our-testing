@@ -28,6 +28,23 @@
                 }
             }
         }
+         // Insert Record in the Database Using Query    
+        function insert_record($name,$email,$phone,$password)
+        {
+            global $db;
+            $query = "insert into users (name,email,phone,password) values('$name','$email','$phone','$password')";
+            $result = mysqli_query($db->connection,$query);
+
+            if($result)
+            {
+
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         
     } 
 ?>
