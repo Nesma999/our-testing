@@ -28,6 +28,7 @@
                 }
             }
         }
+
          // Insert Record in the Database Using Query    
         function insert_record($name,$email,$phone,$password)
         {
@@ -45,6 +46,7 @@
                 return false;
             }
         }
+
         
     } 
 ?>
