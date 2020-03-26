@@ -16,6 +16,7 @@
   <li><a href="">About Egypt</a></li>
   <li style="float:right"><a href="login_user.php">Signin</a></li>
   <li style="float:right"><a href="register.php">Signup</a></li>
+
     <?php $db->Store_Record(); ?>
              <div class="box">
                 <h2> Signup Form </h2>
@@ -29,3 +30,6 @@
             
 </body>
 </html>
+
+            
+
