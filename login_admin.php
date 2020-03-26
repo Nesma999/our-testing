@@ -37,6 +37,21 @@ echo "<script>window.location.href='login_admin.php'</script>";
 <body>
   <ul>
   <li><a class="active" href="Home.php">Home</a></li>
-
+  </ul>
+     <div class="box">
+      <h2> Login Form </h2>
+        <form method="POST">
+           <div class="inputBox">
+               <input type="text" name="name" placeholder=" Name" class="form-control mb-2" required>
+           </div>
+            <div class="inputBox">
+              <input type="password" name="password" placeholder=" Password" class="form-control mb-2" required>
+           </div>
+                    
+              <button class="btn btn-success" name="signin"> login </button>
+        </form>
+     </div>
+</body>
+</html>
 
 
