@@ -25,6 +25,7 @@ echo "<script>window.location.href='login_admin.php'</script>";
 }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,5 +37,6 @@ echo "<script>window.location.href='login_admin.php'</script>";
 <body>
   <ul>
   <li><a class="active" href="Home.php">Home</a></li>
+
 
 
