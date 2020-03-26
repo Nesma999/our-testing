@@ -25,5 +25,16 @@ echo "<script>window.location.href='login_admin.php'</script>";
 }
 }
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css\s.css">
+    <link rel="stylesheet" type="text/css" href="css\navbar.css">
+    <title>Login</title>
+</head>
+<body>
+  <ul>
+  <li><a class="active" href="Home.php">Home</a></li>
 
 
