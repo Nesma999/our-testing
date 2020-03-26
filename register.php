@@ -27,6 +27,19 @@
                 <div class="inputBox">
                     <input type="Email" name="email" placeholder=" E-mail" class="form-control mb-2" required>
                 </div>
+
+                      <div class="inputBox">
+                    <input type="text" name="phone" placeholder=" Phone" class="form-control mb-2" required>
+                </div>
+                     <div class="inputBox">
+                    <input type="password" name="password" placeholder=" Password" class="form-control mb-2" required>
+                </div>
+            
+                <button class="btn btn-success" name="btn_save"> Register </button>
+            </form>
+        </div>
+
+
             
 </body>
 </html>

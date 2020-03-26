@@ -55,6 +55,7 @@
             $result = mysqli_query($db->connection,$query);
               return $result;
           }
+
               // Function for signin user
        public function signin_user($name,$pasword)
           {
@@ -63,6 +64,7 @@
             $result = mysqli_query($db->connection,$query);
               return $result;
           }
+
 
         
     } 
