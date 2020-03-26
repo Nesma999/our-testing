@@ -56,6 +56,16 @@
               return $result;
           }
 
+              // Function for signin user
+       public function signin_user($name,$pasword)
+          {
+        global $db;
+            $query = "select id,name from users where name='$name' and Password='$pasword' and group_id=0";
+            $result = mysqli_query($db->connection,$query);
+              return $result;
+          }
+
+
         
     } 
 ?>
