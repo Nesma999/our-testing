@@ -5,6 +5,7 @@
     $db = new operations();
     $result=$db->view_record();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,3 +25,4 @@
             ?>
  </body>
 </html>
+
