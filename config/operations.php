@@ -82,6 +82,7 @@
             return $data;
 
         }
+
         
            // Display Session Message
         public function display_message()
@@ -92,6 +93,8 @@
                 unset($_SESSION['Message']);
             }
         }
+
+
 
        
             // Delete Record
