@@ -73,6 +73,8 @@
             $result = mysqli_query($db->connection,$query);
             return $result;
         }
+
+
        
             // Delete Record
         public function Delete_Record($id)
@@ -89,6 +91,7 @@
                 return false;
             }
         }
+
         
     } 
 ?>
