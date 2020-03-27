@@ -73,6 +73,44 @@
             $result = mysqli_query($db->connection,$query);
             return $result;
         }
+
+           // Get Particular Record
+       public function get_record($id)
+        {
+            global $db;
+            $sql = "select * from users where id='$id'";
+            $data = mysqli_query($db->connection,$sql);
+            return $data;
+
+        }
+        
+           // Set Session Message
+        public function set_messsage($msg)
+        {
+            if(!empty($msg))
+            {
+                $_SESSION['Message']=$msg;
+            }
+            else
+            {
+                $msg = "";
+            }
+        }
+
+        
+           // Display Session Message
+        public function display_message()
+        {
+            if(isset($_SESSION['Message']))
+            {
+                echo $_SESSION['Message'];
+                unset($_SESSION['Message']);
+            }
+        }
+
+
+
+
        
             // Delete Record
         public function Delete_Record($id)
@@ -89,6 +127,7 @@
                 return false;
             }
         }
+
         
     } 
 ?>
