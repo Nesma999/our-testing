@@ -7,11 +7,13 @@
     {
         global $db;
         $ID = $_GET['D_ID'];
+
       if($db->Delete_Record($ID))
         {
             $db->set_messsage('<div class="alert alert-danger">  Your Record Has Been Deleted </div>');
             header("location:view.php");
         }
+
     
     
 ?>
