@@ -82,6 +82,19 @@
             return $data;
 
         }
+        
+           // Set Session Message
+        public function set_messsage($msg)
+        {
+            if(!empty($msg))
+            {
+                $_SESSION['Message']=$msg;
+            }
+            else
+            {
+                $msg = "";
+            }
+        }
 
         
            // Display Session Message
