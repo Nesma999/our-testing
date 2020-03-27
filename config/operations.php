@@ -83,6 +83,19 @@
 
         }
 
+        
+           // Display Session Message
+        public function display_message()
+        {
+            if(isset($_SESSION['Message']))
+            {
+                echo $_SESSION['Message'];
+                unset($_SESSION['Message']);
+            }
+        }
+
+
+
        
             // Delete Record
         public function Delete_Record($id)
