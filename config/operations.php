@@ -73,6 +73,25 @@
             $result = mysqli_query($db->connection,$query);
             return $result;
         }
+
+
+       
+            // Delete Record
+        public function Delete_Record($id)
+        {
+            global $db;
+            $query = "delete from users where id='$id'";
+            $result = mysqli_query($db->connection,$query);
+            if($result)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         
     } 
 ?>
