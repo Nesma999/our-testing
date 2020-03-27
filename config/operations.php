@@ -73,6 +73,7 @@
             $result = mysqli_query($db->connection,$query);
             return $result;
         }
+
            // Get Particular Record
        public function get_record($id)
         {
@@ -106,6 +107,7 @@
                 unset($_SESSION['Message']);
             }
         }
+
 
 
 
