@@ -73,7 +73,15 @@
             $result = mysqli_query($db->connection,$query);
             return $result;
         }
+           // Get Particular Record
+       public function get_record($id)
+        {
+            global $db;
+            $sql = "select * from users where id='$id'";
+            $data = mysqli_query($db->connection,$sql);
+            return $data;
 
+        }
 
        
             // Delete Record
