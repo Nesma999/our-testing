@@ -65,7 +65,14 @@
               return $result;
           }
 
-
+            // View Database Record
+       public function view_record()
+        {
+            global $db;
+            $query = "select * from users where group_id=0";
+            $result = mysqli_query($db->connection,$query);
+            return $result;
+        }
         
     } 
 ?>
