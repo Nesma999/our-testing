@@ -99,3 +99,15 @@ include 'navbar_admin.php';
                 </tr>
            
 
+    <?php 
+        }
+  }else{
+ 	echo "There are no results matching your search!";
+ }
+}
+     ?>
+        </table>
+      </body>
+</html>
+
+
