@@ -98,4 +98,14 @@ include 'navbar_admin.php';
                     <td><?php echo $row['phone'] ?></td>
                 </tr>
            
+    <?php 
+        }
+  }else{
+ 	echo "There are no results matching your search!";
+ }
+}
+     ?>
+        </table>
+      </body>
+</html>
 
