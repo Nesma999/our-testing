@@ -47,6 +47,7 @@ include 'navbar_admin.php';
   margin-right: 700px;
   margin-left: 50px;
 
+
 }
 .input{
   width: 20%;
