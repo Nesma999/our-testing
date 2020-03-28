@@ -13,11 +13,15 @@
             $db->set_messsage('<div class="alert alert-danger">  Your Record Has Been Deleted </div>');
             header("location:view.php");
         }
+
        else
         {
             $db->set_messsage('<div class="alert alert-danger">  Something Wrong to Delete the Record </div>'); 
         }
     }
+
+
+
     
     
 ?>
