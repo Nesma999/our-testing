@@ -98,6 +98,7 @@ include 'navbar_admin.php';
                     <td><?php echo $row['phone'] ?></td>
                 </tr>
            
+
     <?php 
         }
   }else{
@@ -108,4 +109,5 @@ include 'navbar_admin.php';
         </table>
       </body>
 </html>
+
 
