@@ -24,6 +24,7 @@ include 'navbar_admin.php';
   margin-left: 22px;
 }
 
+
 #customers th,#customers td {
    padding: 20px;
   text-align: left;
@@ -31,3 +32,4 @@ include 'navbar_admin.php';
   border: 1px solid #ddd;
 
 }
+
