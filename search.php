@@ -30,12 +30,20 @@ include 'navbar_admin.php';
   text-align: left;
   border-bottom: 1px solid #ddd;
   border: 1px solid #ddd;
-
-}
-#customers th,#customers td {
-   padding: 20px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-  border: 1px solid #ddd;
-
+   }
+ .button1{
+  background-color:#ff0000;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  margin-right: 700px;
+  margin-left: 50px;
 }
