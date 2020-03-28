@@ -12,6 +12,7 @@ include 'navbar_admin.php';
     <meta charset="UTF-8">
      <link rel="stylesheet" type="text/css" href="css\s.css">
     <title></title>
+
   <style>
      #customers {
   border-collapse: collapse;
@@ -22,4 +23,5 @@ include 'navbar_admin.php';
   margin-right: 150px;
   margin-left: 22px;
 }
+
 
