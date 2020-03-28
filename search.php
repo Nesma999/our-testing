@@ -67,6 +67,34 @@ include 'navbar_admin.php';
     </style>
     </head>
 
-
-
+<body>
+	<form method="POST">
+            <div>
+            <input class="input" type="text" name="search" placeholder="Search" required>
+        </div>
+        <button class="button1" name="submit">Search</button>
+    </form>
+    <?php 
+   if(isset($_POST['submit'])){
+    $search=mysqli_real_escape_string($db1->connection,$_POST['search']);
+        $query="SELECT * FROM users WHERE name LIKE'%$search%' and group_id=0";
+        $result = mysqli_query($db1->connection,$query);
+        $query_result=mysqli_num_rows($result);
+        if($query_result>0){
+            while($row=mysqli_fetch_assoc($result)){
+    ?>
+      <table Id="customers">
+                <tr>
+                    <th style="width: 10%;font-size:20px"> ID </th>
+                    <th style="width: 10%;font-size:20px"> Name </th>
+                    <th style="width: 20%;font-size:20px"> Email </th>
+                    <th style="width: 20%;font-size:20px"> Phone </th>
+                </tr>
+                <tr>
+                	<td><?php echo $row['id'] ?></td>
+                    <td><?php echo $row['name'] ?></td>
+                    <td><?php echo $row['email'] ?></td>
+                    <td><?php echo $row['phone'] ?></td>
+                </tr>
+           
 
