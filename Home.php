@@ -15,6 +15,10 @@
    <ul>
   <li><a class="active" href="login_admin.php">Admin</a></li>
 
+  <li><a href="login_user.php">Users</a></li>
+</ul>	   
+
+
 
  
 
