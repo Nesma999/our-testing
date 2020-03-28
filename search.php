@@ -13,3 +13,15 @@ include 'navbar_admin.php';
      <link rel="stylesheet" type="text/css" href="css\s.css">
     <title></title>
 
+  <style>
+     #customers {
+  border-collapse: collapse;
+  width: 95%;
+   background-color:white;
+    margin-top: 130px;
+  margin-bottom: 40px;
+  margin-right: 150px;
+  margin-left: 22px;
+}
+
+
