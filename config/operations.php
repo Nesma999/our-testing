@@ -127,6 +127,20 @@
                 return false;
             }
         }
+        
+              // Update Record
+        public function update()
+        {
+            global $db;
+
+            if(isset($_POST['btn_update']))
+            {
+                $ID = $_POST['id'];
+                $name = $db->check($_POST['name']);
+                $email = $db->check($_POST['email']);
+                $phone = $db->check($_POST['phone']);
+                $password = $db->check($_POST['password']);
+
 
         
     } 
