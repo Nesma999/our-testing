@@ -140,6 +140,18 @@
                 $email = $db->check($_POST['email']);
                 $phone = $db->check($_POST['phone']);
                 $password = $db->check($_POST['password']);
+                 if($this->update_record($ID,$name,$email,$phone,$password))
+                {
+                    header("location:view.php");
+                }
+                else
+                {   
+                    $this->set_messsage('<div class="alert alert-success"> Something Wrong : )</div>');
+                }
+
+               
+            }
+        }
 
 
         
