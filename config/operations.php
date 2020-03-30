@@ -127,6 +127,52 @@
                 return false;
             }
         }
+        
+              // Update Record
+        public function update()
+        {
+            global $db;
+
+            if(isset($_POST['btn_update']))
+            {
+                $ID = $_POST['id'];
+                $name = $db->check($_POST['name']);
+                $email = $db->check($_POST['email']);
+                $phone = $db->check($_POST['phone']);
+                $password = $db->check($_POST['password']);
+
+                 if($this->update_record($ID,$name,$email,$phone,$password))
+                {
+                    header("location:view.php");
+                }
+                else
+                {   
+                    $this->set_messsage('<div class="alert alert-success"> Something Wrong : )</div>');
+                }
+
+               
+            }
+        }
+
+       // Update Function 2
+        public function update_record($id,$name,$email,$phone)
+        {
+            global $db;
+            $sql = "update users set name='$name', email='$email', phone='$phone' where id='$id'";
+            $result = mysqli_query($db->connection,$sql);
+            if($result)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
+
+
 
         
     } 
