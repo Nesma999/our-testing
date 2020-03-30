@@ -154,6 +154,24 @@
             }
         }
 
+       // Update Function 2
+        public function update_record($id,$name,$email,$phone)
+        {
+            global $db;
+            $sql = "update users set name='$name', email='$email', phone='$phone' where id='$id'";
+            $result = mysqli_query($db->connection,$sql);
+            if($result)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+
+
 
 
         
