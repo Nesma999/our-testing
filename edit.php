@@ -13,6 +13,7 @@
      <link rel="stylesheet" type="text/css" href="css\s.css">
     <title></title>
 </head>
+
 <body>
         <?php $db->Store_Record(); ?>
         <div class="box">
@@ -36,3 +37,4 @@
 </body>
 
 </html>
+
