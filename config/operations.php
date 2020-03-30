@@ -153,6 +153,7 @@
                
             }
         }
+
        // Update Function 2
         public function update_record($id,$name,$email,$phone)
         {
@@ -168,6 +169,9 @@
                 return false;
             }
         }
+
+
+
 
 
         
