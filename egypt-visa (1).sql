@@ -22,24 +22,7 @@ SET time_zone = "+00:00";
 -- Database: `egypt-visa`
 --
 
--- --------------------------------------------------------
 
---
--- Table structure for table `feedback`
---
-
-CREATE TABLE `feedback` (
-  `id` int(11) NOT NULL,
-  `feedback` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16;
-
---
--- Dumping data for table `feedback`
---
-
-INSERT INTO `feedback` (`id`, `feedback`) VALUES
-(1, 'good'),
-(2, 'nice');
 
 -- --------------------------------------------------------
 
@@ -73,11 +56,7 @@ INSERT INTO `users` (`id`, `name`, `email`, `phone`, `password`, `group_id`) VAL
 -- Indexes for dumped tables
 --
 
---
--- Indexes for table `feedback`
---
-ALTER TABLE `feedback`
-  ADD PRIMARY KEY (`id`);
+
 
 --
 -- Indexes for table `users`
@@ -89,11 +68,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for dumped tables
 --
 
---
--- AUTO_INCREMENT for table `feedback`
---
-ALTER TABLE `feedback`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 
 --
 -- AUTO_INCREMENT for table `users`
