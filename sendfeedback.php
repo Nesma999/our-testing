@@ -8,3 +8,12 @@
    
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Feedback</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css\s.css">
+  <link rel="stylesheet" href="css\footer.css">
+</head>
+</html>
