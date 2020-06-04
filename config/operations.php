@@ -187,7 +187,26 @@
             }
         }
 
+ public function Store_feedback()
+        {
+            global $db;
+            if(isset($_POST['send']))
+            {
+                $id = $db->check($_POST['id']);
+                $feedback = $db->check($_POST['feedback']);
+                
 
+                if($this->send_feedback($id,$feedback))
+                {
+                    //echo "<script>window.location.href='login_user.php'</script>";
+                    header("Location:sendfeedback.php");
+                }
+                else
+                {
+                    echo '<div class="alert alert-danger"> Failed </div>';
+                }
+            }
+        }
 
         
     } 
