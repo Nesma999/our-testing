@@ -170,7 +170,22 @@
             }
         }
 
+//sendfeedback
+        function send_feedback($id,$feedback)
+        {
+            global $db;
+            $query = "insert into feedback (id,feedback) values ('$id','$feedback')";
+            $result = mysqli_query($db->connection,$query);
 
+            if($result)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
 
 
