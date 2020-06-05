@@ -34,4 +34,33 @@ else
 
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css\s.css">
+    <link rel="stylesheet" href="css\footer.css">
+    <title>Change Password</title>
+</head>
+<body>
+     <div class="box">
+      <h2>Change Password</h2>
+        <form method="POST">
+           <div class="inputBox">
+               <input type="text" name="name" placeholder=" Name" class="form-control mb-2" required>
+           </div>
+           <div class="inputBox">
+               <input type="text" name="CPassword" placeholder="Current Password" class="form-control mb-2" required>
+           </div>
+            <div class="inputBox">
+              <input type="password" name="NPassword" placeholder="New Password" class="form-control mb-2" required>
+           </div>
+           <div class="inputBox">
+              <input type="password" name="COPassword" placeholder="Confirm Password" class="form-control mb-2" required>
+           </div>
+                    
+              <button class="btn btn-success" name="submit"> Submit </button>
+        </form>
+     </div>
+</body>
 </html>
