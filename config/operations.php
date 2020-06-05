@@ -207,7 +207,14 @@
                 }
             }
         }
-
+   public function Change_password($name,$pasword)
+        {
+            global $db;
+             $query = "select name,password FROM users where
+              name='$name' and Password='$pasword'";
+            $result = mysqli_query($db->connection,$query);
+              return $result;
+                }
         
     } 
 ?>
