@@ -215,6 +215,14 @@
             $result = mysqli_query($db->connection,$query);
               return $result;
                 }
+         // View Feedback For Users
+        public function view_feedback()
+        {
+            global $db;
+            $query = "select * from feedback";
+            $result = mysqli_query($db->connection,$query);
+            return $result;
+        }
         
     } 
 ?>
