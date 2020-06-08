@@ -11,7 +11,7 @@
   <li><a href="">Interview online </a></li>
   <li><a href="search.php">Applicant Report  </a></li>
   <li><a href="">Result Report</a></li>
-  <li><a href="">Feedback</a></li>
+ <li><a href="feedback.php">Feedback</a></li>
   <li><a href="logout.php">Logout</a></li>
 </ul>
 
