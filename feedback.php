@@ -67,3 +67,39 @@
     
 </style>
     <title>Feedback</title>
+    </head>
+
+<body>
+        <div>
+            <h2 class="head"> FEEDBACK </h2>
+        </div>
+        <div class="card-body">
+            <?php
+                  $db->display_message(); 
+                  $db->display_message();
+            ?>
+            <table Id="customers">
+                <tr>
+                    <th style="width: 10%;font-size:20px"> ID </th>
+                    <th style="width: 10%;font-size:20px"> Feedback </th>
+                    <th style="width: 20;font-size:20px" colspan="1">Operations</th>
+                </tr>
+                <tr>
+                    <?php 
+                        while($data = mysqli_fetch_assoc($result))
+                        {
+                    ?>
+                        <td><?php echo $data['id'] ?></td>
+                        <td><?php echo $data['feedback'] ?></td>
+                        
+  
+                        <td><a href="del.php?D_ID=<?php echo $data['id'] ?>" class="button1">Del</a></td>
+                </tr>
+                <?php
+                        }
+                    ?>
+                        </table>
+                    </div>
+                
+</body>
+</html>
