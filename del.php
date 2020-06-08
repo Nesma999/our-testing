@@ -19,7 +19,22 @@
             $db->set_messsage('<div class="alert alert-danger">  Something Wrong to Delete the Record </div>'); 
         }
     }
+ if(isset($_GET['D_ID']))
+    {
+        global $db;
+        $ID = $_GET['D_ID'];
 
+        if($db->Delete_feedback($ID))
+        {
+            $db->set_messsage('<div class="alert alert-danger">  Feedback  Has Been Deleted </div>');
+            header("location:feedback.php");
+        }
+        else
+        {
+            $db->set_messsage('<div class="alert alert-danger">  Something Wrong to Delete the Feedback </div>'); 
+        }
+    }
+    
 
 
     
