@@ -238,6 +238,25 @@
                 return false;
             }
         }
+        
+        function insert_online($id,$app,$visa,$entry,$travelfrom,$arrival,$departure)
+        {
+            global $db;
+           // $re=mysqli_query($db->connection,"select id from users where id='$id'");
+            //$get_re=mysqli_fetch($re);
+            $query = "INSERT INTO interview (id,app,visa,entry,travelfrom,arrival,departure) VALUES ('$id','$app','$visa','$entry','$travelfrom','$arrival','$departure')";
+            $result = mysqli_query($db->connection,$query);
+
+            if($result)
+            {
+
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     } 
 ?>
 
