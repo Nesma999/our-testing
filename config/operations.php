@@ -257,6 +257,30 @@
                 return false;
             }
         }
+        public function Store_online()
+        {
+            global $db;
+            if(isset($_POST['insert']))
+            {
+                $id=$_POST['id'];
+                $app = $_POST['app'];
+                $visa = $_POST['visa'];
+                $entry = $_POST['entry'];
+                $travelfrom = $_POST['travelfrom'];
+                $arrival=$_POST['arrival'];
+                $departure=$_POST['departure'];
+
+                if($this->insert_online($id,$app,$visa,$entry,$travelfrom,$arrival,$departure))
+                {
+                    //echo "<script>window.location.href='login_user.php'</script>";
+                    header("Location:traveling_information.php");
+                }
+                else
+                {
+                    echo '<div class="alert alert-danger"> Failed </div>';
+                }
+            }
+       
     } 
 ?>
 
