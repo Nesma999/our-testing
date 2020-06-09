@@ -76,6 +76,91 @@ require_once('./config/dbconfig.php');
     border-radius: 10px ;
 }
 </style>
+	<body>
+  <?php $db->Store_online(); ?>
+	<h1 class="head">Travel Information</h1>
+  <div class="f">
+  <form action="" method="POST">
+  
+         <div class="di" data-validate = "ID is required">
+          <label class="label" for="fname">Id</label><br>
+            <input style="width: 28%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  margin-top:10px;
+  margin-bottom:40px;
+  margin-right: 120px;
+  margin-left: 120px;" type="text" name="id">
+          </div>
+
+  <div class="di">
+      <label class="label" for="fname">Application Type</label><br>
+      <select style="width: 33%" class="option" name="app">
+  <option >Select Application Type</option>
+        <option value="Single">Single</option>
+        <option value="Family">Family</option>
+        <option value="Group">Group</option>
+      </select>
+
+<div class="dii">
+   <label class="label" for="fname">Visa Type</label><br>
+  <select style="width: 35%" class="option" name="visa">
+  <option >Select Visa Type</option>
+  <option value="Travel">Travel</option>
+  </select>
+</div>
+<div class="di">
+   <label class="label" for="fname">Entry Type</label><br>
+  <select style="width: 33%" class="option" name="entry">
+  <option >Select Entry Type</option>
+  <option value="Single">Single</option>
+  <option value="Multiple">Multiple</option>
+  </select>
+</div>
+<div class="dii">
+   <label class="label" for="fname">Traveling From</label><br>
+  <select style="width: 35%" class="option" name="travelfrom">
+  <option >select departure country</option>
+  <option value="Afghanistan">Afghanistan</option>
+  <option value="Argentina">Argentina</option>
+  <option value="Chine">Chine</option>
+  <option value="United States Of America">United States Of America</option>
+  <option value="United States Of Emirates">United States Of Emirates</option>
+  <option value="Turkey">Turkey</option>
+  <option value="Samoa">Samoa</option>
+  <option value="Tuvalu">Tuvalu</option>
+  <option value="Vietnam">Vietnam</option>
+  <option value="vanuatu">vanuatu</option>
+  <option value="Uruguay">Uruguay</option>
+  <option value="British">British</option>
+  <option value="Tunisia">Tunisia</option>
+  <option value="Sweden">Sweden</option>
+  <option value="Sudan">Sudan</option>
+  <option value="South Africia">South Africia</option>
+  <option value="Spain">Spain</option>
+  <option value="South Sudan">South Sudan</option>
+  <option value="United Kingdom">United Kingdom</option>
+  </select>
+</div>
+<div class="di">
+   <label class="label" for="fname">Expected Arrival Date</label><br>
+  <input class="option" type="date" id="datee" name="arrival">
+</div>
+<div class="dii">
+   <label class="label" for="fname">Expected Departure Date</label><br>
+  <input class="option" type="date" id="datee" name="departure">
+</div>
+<button type="insert" class="button1" name="insert" > Insert </button>
+
+</form>
+  </div>
+
+
+
+
+</body>
 </head>
 
 </html>
