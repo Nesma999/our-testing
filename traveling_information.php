@@ -1,5 +1,5 @@
 <?php include 'navbar_user.php'; 
-include('footer.php');
+
 require_once('./config/dbconfig.php'); 
     $db = new operations();
  
