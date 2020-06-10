@@ -282,6 +282,22 @@
             }
        
     } 
+         public function view_answers()
+        {
+            global $db;
+            $query = "select * from interview ";
+            $result = mysqli_query($db->connection,$query);
+            return $result;
+        }
+        public function get_answers($id)
+        {
+            global $db;
+            $sql = "select * from interview where id='$id'";
+            $data = mysqli_query($db->connection,$sql);
+            return $data;
+
+        }
+
     }
 ?>
 
