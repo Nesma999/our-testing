@@ -93,7 +93,7 @@
                         <td><?php echo $data['feedback'] ?></td>
                         
   
-                        <td><a href="del.php?D_ID=<?php echo $data['id'] ?>" class="button1">Del</a></td>
+                        <td><a href="del.php?Del_ID=<?php echo $data['id'] ?>" class="button1">Del</a></td>
                 </tr>
                 <?php
                         }
