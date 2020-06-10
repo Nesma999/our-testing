@@ -11,7 +11,7 @@
 
   <li><a href="traveling_information.php">Traveling Information</a></li>
   <li><a href="applicant_information.php">Applicant Information</a></li>
-
+  <li><a href="st.php">Check Status</a></li>
   <li><a href="sendfeedback.php">Feedback</a></li>
    <li><a href="change_pass.php">Change Password</a></li>
   <li><a href="logout.php">Logout</a></li>
