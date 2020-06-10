@@ -297,7 +297,22 @@
             return $data;
 
         }
-
+// Updatestatus in database 
+        public function update_st($id,$status)
+        {
+            global $db;
+            $sql = "update interview set status ='$status' where id='$id'  ";
+            $result = mysqli_query($db->connection,$sql);
+            if($result)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+       
     }
 ?>
 
