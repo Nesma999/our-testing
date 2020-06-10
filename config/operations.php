@@ -312,7 +312,34 @@
                 return false;
             }
         }
-       
+       public function update_status()
+        {
+            global $db;
+
+            if(isset($_POST['insert']))
+            {
+               $id = $_POST['id'];
+               /* $app = $db->check($_POST['app']);
+                $visa = $db->check($_POST['visa']);
+                $entry = $db->check($_POST['entry']);
+                $travelfrom = $db->check($_POST['travelfrom']);
+                $arrival = $db->check($_POST['arrival']);
+                $departure = $db->check($_POST['departure']);
+                */
+                $status = $db->check($_POST['status']);
+
+                if($this->update_st($id,$status))
+                {
+                   echo "success";
+                }
+                else
+                {   
+                    $this->set_messsage('<div class="alert alert-success"> Something Wrong : )</div>');
+                }
+
+               
+            }
+        }
     }
 ?>
 
