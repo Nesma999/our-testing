@@ -68,16 +68,15 @@ CREATE TABLE `interview` (
 --
 
 INSERT INTO `interview` (`aid`, `id`, `app`, `visa`, `entry`, `travelfrom`, `arrival`, `departure`, `status`) VALUES
-(3, 8, 'Single', 'Travel', 'Single', 'Tuvalu', '2020-06-25', '2020-06-30', 'pending'),
+(3, 8, 'Single', 'Travel', 'Single', 'Tuvalu', '2020-06-25', '2020-06-30', 'accept'),
 (11, 15, 'Family', 'Travel', 'Single', 'vanuatu', '2020-10-20', '2020-10-12', 'pending'),
-(12, 13, 'Single', 'Travel', 'Single', 'Tuvalu', '2020-05-06', '2021-06-06', 'pending'),
+(12, 13, 'Single', 'Travel', 'Single', 'Tuvalu', '2020-05-06', '2021-06-06', 'reject'),
 (13, 7, 'Family', 'Travel', 'Multiple', 'British', '2020-10-10', '2021-11-11', 'pending'),
 (14, 5, 'Group', 'Travel', 'Multiple', 'Vietnam', '2020-01-01', '2021-02-22', 'pending'),
 (15, 10, 'Single', 'Travel', 'Multiple', 'British', '2021-10-10', '2022-03-10', 'pending'),
 (16, 6, 'Family', 'Travel', 'Single', 'Afghanistan', '2020-10-10', '2021-01-01', 'pending'),
-(17, 9, 'Family', 'Travel', 'Single', 'Samoa', '2021-05-05', '2021-05-06', 'pending'),
-(18, 14, 'Family', 'Travel', 'Multiple', 'Sweden', '2021-10-02', '2021-10-12', 'pending');
-
+(17, 9, 'Family', 'Travel', 'Single', 'Samoa', '2021-05-05', '2021-05-06', 'accept'),
+(18, 14, 'Family', 'Travel', 'Multiple', 'Sweden', '2021-10-02', '2021-10-12', 'accept');
 -- --------------------------------------------------------
 
 --
