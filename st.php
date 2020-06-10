@@ -62,4 +62,57 @@ include 'navbar_user.php';
 </style>
     <title></title>
 </head>
+    <body>
+	<form method="POST">
+            <div>
+            <input class="input" type="text" name="search" placeholder="Search" required>
+        </div>
+        <button class="button1" name="submit">Check</button>
+    </form>
+   <?php 
+   if(isset($_POST['submit'])){
+    $search=mysqli_real_escape_string($db1->connection,$_POST['search']);
+        $query="SELECT * FROM interview WHERE id LIKE'%$search%'";
+        $result = mysqli_query($db1->connection,$query);
+        $query_result=mysqli_num_rows($result);
+        if($query_result>0){
+            while($row=mysqli_fetch_assoc($result)){
+    ?>
+      <table Id="customers">
+                <tr>
+                    <th style="width: 10%;font-size:20px"> ID </th>
+                    <th style="width: 10%;font-size:20px"> app </th>
+                    <th style="width: 20%;font-size:20px"> visa</th>
+                    <th style="width: 20%;font-size:20px"> entry </th>
+                    <th style="width: 20%;font-size:20px"> travelfrom </th>
+                    <th style="width: 20%;font-size:20px"> arrival </th>
+                    <th style="width: 20%;font-size:20px"> departure </th>
+                    <th style="width: 20%;font-size:20px"> status </th>
+                    <th style="width: 20%;font-size:20px"> Print </th>
+                </tr>
+                <tr>
+                	<td><?php echo $row['id'] ?></td>
+                    <td><?php echo $row['app'] ?></td>
+                    <td><?php echo $row['visa'] ?></td>
+                    <td><?php echo $row['entry'] ?></td>
+                    <td><?php echo $row['travelfrom'] ?></td>
+                    <td><?php echo $row['arrival'] ?></td>
+                    <td><?php echo $row['departure'] ?></td>
+                    <td><?php echo $row['status'] ?></td>
+                    <td style="border-radius: 8px;"> <button onclick="myfunction()">print</button>
+            <script >
+              function myfunction(){
+                window.print();
+              }
+            </script></td>
+                </tr>
+                 <?php 
+        }
+}else{
+ 	echo "There are no results matching your search!";
+ }
+}
+     ?>
+        </table>
+      </body>
 </html>
