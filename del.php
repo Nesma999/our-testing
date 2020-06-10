@@ -19,10 +19,10 @@
             $db->set_messsage('<div class="alert alert-danger">  Something Wrong to Delete the Record </div>'); 
         }
     }
- if(isset($_GET['D_ID']))
+ if(isset($_GET['Del_ID']))
     {
         global $db;
-        $ID = $_GET['D_ID'];
+        $ID = $_GET['Del_ID'];
 
         if($db->Delete_feedback($ID))
         {
