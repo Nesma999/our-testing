@@ -6,7 +6,7 @@ How to run Visa Processing Project
 4. Open phpmyadmin (http://localhost/phpmyadmin)
 5. Create a database with name egypt-visa
 6. Import egypt-visa.sql file(given inside the zip package in sql file folder)
-7.Run the script http://localhost/newsportal (frontend)
+7.Run the script http://localhost/php-course/our-testing-master/Home.php
 8. For admin panel http://localhost/php-course/our-testing-master/login_admin.php
 Credential for admin panel :
 username / email : admin/ nesma
