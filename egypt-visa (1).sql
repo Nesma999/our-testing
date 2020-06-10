@@ -119,6 +119,7 @@ INSERT INTO `users` (`id`, `name`, `email`, `phone`, `password`, `group_id`) VAL
 --
 ALTER TABLE `feedback`
   ADD PRIMARY KEY (`id`);
+ ADD UNIQUE KEY `id` (`id`);
 
 --
 -- Indexes for table `interview`
