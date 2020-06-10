@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 10, 2020 at 07:23 PM
+-- Generation Time: Jun 10, 2020 at 08:16 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.4
 
@@ -77,6 +77,7 @@ INSERT INTO `interview` (`aid`, `id`, `app`, `visa`, `entry`, `travelfrom`, `arr
 (16, 6, 'Family', 'Travel', 'Single', 'Afghanistan', '2020-10-10', '2021-01-01', 'pending'),
 (17, 9, 'Family', 'Travel', 'Single', 'Samoa', '2021-05-05', '2021-05-06', 'accept'),
 (18, 14, 'Family', 'Travel', 'Multiple', 'Sweden', '2021-10-02', '2021-10-12', 'accept');
+
 -- --------------------------------------------------------
 
 --
@@ -98,7 +99,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `name`, `email`, `phone`, `password`, `group_id`) VALUES
 (1, 'nesma', 'nesma@gmail.com', 1146485834, '123', 1),
-(5, 'mariam', 'mariam1@gmail.com', 12376567, '12345', 0),
+(5, 'mariam', 'mariam12@gmail.com', 12376567, '12345', 0),
 (6, 'haidy', 'haidy@gmail.com', 1209876543, '1234', 0),
 (7, 'hala', 'hala@gmail.com', 11234567, '123', 0),
 (8, 'mona', 'mona@gmail.com', 123456778, '123', 0),
@@ -119,13 +120,13 @@ INSERT INTO `users` (`id`, `name`, `email`, `phone`, `password`, `group_id`) VAL
 --
 ALTER TABLE `feedback`
   ADD PRIMARY KEY (`id`);
- ADD UNIQUE KEY `id` (`id`);
 
 --
 -- Indexes for table `interview`
 --
 ALTER TABLE `interview`
-  ADD PRIMARY KEY (`aid`);
+  ADD PRIMARY KEY (`aid`),
+  ADD UNIQUE KEY `id` (`id`);
 
 --
 -- Indexes for table `users`
@@ -147,7 +148,7 @@ ALTER TABLE `feedback`
 -- AUTO_INCREMENT for table `interview`
 --
 ALTER TABLE `interview`
-  MODIFY `aid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `aid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `users`
