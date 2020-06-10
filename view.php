@@ -41,7 +41,7 @@
                         <td><?php echo $data['email'] ?></td>
                         <td><?php echo $data['phone'] ?></td>
   <td style="border-radius: 8px;"><a href="  edit.php?U_ID=<?php echo $data['id'] ?>" class="button">Edit</a></td>
-                        <td><a href="del.php?D_ID=<?php echo $data['id'] ?>" class="button1">Del</a></td>
+                        <td><a href="del.php?Del_ID=<?php echo $data['id'] ?>" class="button1">Del</a></td>
                 </tr>
                 <?php
                         }
