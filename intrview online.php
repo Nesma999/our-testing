@@ -67,4 +67,45 @@
 </style>
     <title> Interview Online</title>
     </head>
+ <body>
+        <div>
+            <h2 class="head"> All Users </h2>
+        </div>
+        <div class="card-body">
+            <?php
+                  $db->display_message(); 
+                  $db->display_message();
+            ?>
+            <table Id="customers">
+                <tr>
+                    <th style="width: 10%;font-size:20px"> ID </th>
+                    <th style="width: 10%;font-size:20px">app </th>
+                    <th style="width: 20%;font-size:20px"> visa </th>
+                    <th style="width: 20%;font-size:20px"> entry </th>
+                    <th style="width: 20%;font-size:20px"> travelfrom </th>
+                    <th style="width: 20%;font-size:20px"> arrival </th>
+                    <th style="width: 20%;font-size:20px">departure </th>
+                    <th style="width: 20;font-size:20px" colspan="2">Operations</th>
+                    </tr>
+                    <tr>
+                    <?php 
+                        while($data = mysqli_fetch_assoc($result))
+                        {
+                    ?>
+                        <td><?php echo $data['id'] ?></td>
+                        <td><?php echo $data['app'] ?></td>
+                        <td><?php echo $data['visa'] ?></td>
+                        <td><?php echo $data['entry'] ?></td>
+                        <td><?php echo $data['travelfrom'] ?></td>
+                        <td><?php echo $data['arrival'] ?></td>
+                        <td><?php echo $data['departure'] ?></td>
+                        <td style="border-radius: 8px;"><a href="  answers.php ?U_ID=<?php echo $data['id'] ?>" class="button">Edit</a></td>
+                         </tr>
+                <?php
+                        }
+                    ?>
+                        </table>
+                    </div>
+                
+</body>
 </html>
