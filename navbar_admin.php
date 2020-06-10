@@ -10,6 +10,7 @@
   <li><a href="view.php">View users</a></li>
   <li><a href="">Interview online </a></li>
   <li><a href="search.php">Applicant Report  </a></li>
+  <li><a href="intrview online.php">Interview online </a></li>
   <li><a href="">Result Report</a></li>
  <li><a href="feedback.php">Feedback</a></li>
   <li><a href="logout.php">Logout</a></li>
