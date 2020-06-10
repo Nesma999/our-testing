@@ -99,7 +99,7 @@
                         <td><?php echo $data['travelfrom'] ?></td>
                         <td><?php echo $data['arrival'] ?></td>
                         <td><?php echo $data['departure'] ?></td>
-                        <td style="border-radius: 8px;"><a href="  answers.php ?U_ID=<?php echo $data['id'] ?>" class="button">Edit</a></td>
+                        <td style="border-radius: 8px;"><a href="  answers.php ?U_ID=<?php echo $data['id'] ?>" class="button">Add Status</a></td>
                          </tr>
                 <?php
                         }
